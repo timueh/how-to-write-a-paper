@@ -1,3 +1,11 @@
+# Disclaimer
+
+The following document is based on [notes from Jean-Yves LeBoudec](https://ica1www.epfl.ch/PS_files/paper.htm).
+With his permission I formatted the notes (and fixed some typos).
+All credit lies with him.
+
+---
+
 Writing a paper? Please check these guidelines. First answer the
 following quiz.
 
@@ -54,7 +62,7 @@ clear, you may want to read the rest of this document.
 ## You write for human beings
 
 1.  Think about your reader. Who is she? Is she assumed to be an expert in computer networking or not?
-2.  Help your reader. Even if your reader is an expert in your field, he is NOT an expert in your work. You have spent the last months or years working on this project, but your reader has not. Please help your reader get the overall picture in place quickly. Reading technical papers is hard, is much less fun than reading novels, so please be kind to your reader (who may be your reviewer\...). Make it easy to understand whether every point you are making is
+2.  Help your reader. Even if your reader is an expert in your field, he is not* an expert in your work. You have spent the last months or years working on this project, but your reader has not. Please help your reader get the overall picture in place quickly. Reading technical papers is hard, is much less fun than reading novels, so please be kind to your reader (who may be your reviewer\...). Make it easy to understand whether every point you are making is
     -   an assumption,
     -   a review of existing work,
     -   your invention.
@@ -62,7 +70,7 @@ clear, you may want to read the rest of this document.
 
 ## Organize the information you are delivering
 
-This is the most difficult part \-- if you master the two points below,
+This is the most difficult part -- if you master the two points below,
 you are in good shape.
 
 1.  Define concepts once and at the right place.
@@ -72,7 +80,9 @@ you are in good shape.
     simulation results are all different things. They should appear in
     well defined sections, and only once. DO NOT define or explain the
     same thing twice. This gives a non professional look, and is likely
-    to be inconsistent as your paper evolves.\
+    to be inconsistent as your paper evolves.
+
+    \
     *Don\'t*
 
     > In Section \"Simulation Setup\": Nodes periodically broadcast
@@ -114,6 +124,7 @@ you are in good shape.
     to have long captions. In the caption, point to precise locations in
     the paper where the reader can find all details, if necessary.
 
+    \
     *Don\'t*
 
     > (caption of Figure 5). Simulation results for a 500 node network
@@ -128,6 +139,7 @@ you are in good shape.
     this is clear from the full text \-- it should also be clear to a
     reader who jumps from figure to figure).
 
+    \
     *Do*
 
     > (caption of Figure 5). Simulation results for the network of
@@ -141,6 +153,7 @@ Here are a few observations to help you reach these two objectives.
 -   Make sure all notation you use is easily identifiable. If you talk of parameter α at great length in Section 5.3, and α was defined somewhere in the middle of a paragraph in Section 2.3.4, then you have a problem. It will be very hard for a reader to locate the meaning of α. In such a case, list all your global important notation in a table or a very visible paragraph.
 -   Avoid using synonyms. Synonyms are great when used by Dostoievski in a novel, but not in a technical document.
 
+    \
     *Don\'t*
 
     > Node A forwards the packet using the fixed address since the
@@ -154,6 +167,7 @@ Here are a few observations to help you reach these two objectives.
     ZGW reachable area\". It may be obvious to you that they are the
     same, but this is probably not so to the reader.
 
+    \
     *Do*
 
     > The node builds its ZGW routing table using the fields heard in
@@ -168,6 +182,7 @@ Here are a few observations to help you reach these two objectives.
 
 -   Give your justifications at the beginning of the paper (for major justifications) or of the section (for minor justifications). Do *not* give them on the fly, as needed. Once you have justified a choice, do not justify it again -- this weakens your justification.
 
+    \
     *Don\'t*
 
     (head of section 5)
@@ -193,7 +208,7 @@ Here are a few observations to help you reach these two objectives.
     > experiment is performed to see whether a state change should
     > occur.
 
-
+    \
     *Do*
 
     (head of section 5)
@@ -220,6 +235,7 @@ Here are a few observations to help you reach these two objectives.
 
 -   Do not introduce major building blocks in the middle of the paper.
 
+    \
     *Don\'t*
 
     In Section 5 (detailed description of the protocol):
@@ -231,7 +247,7 @@ Here are a few observations to help you reach these two objectives.
     > thus computes the weighted sum of increase components and applies
     > the following equation\...
 
-
+    \
     *Do*
 
     In Section 2 (overview):
@@ -255,10 +271,14 @@ Here are a few observations to help you reach these two objectives.
 1.  Use the scientific method to draw conclusions. The scientific method means that you do not draw a conclusion before verifying what you are going to say; in short:
 
                 do
-                   {define hypothesis; design experiments; validate }
+                   {
+                        define hypothesis;
+                        design experiments;
+                        validate
+                    }
                 until (validation is OK)
 
-
+    \
     *Don\'t*
 
     > (In Section \"Simulation Results\"): The normalized routing load
@@ -277,6 +297,7 @@ Here are a few observations to help you reach these two objectives.
     next step is to design an experiment that will confirm, or infirm
     that hypothesis.
 
+    \
     *Do*
 
     > (In Section \"Simulation Results\"): The normalized routing load
@@ -344,6 +365,7 @@ Now it is time to think of your writing style.
 
 1.  Introduce one point per sentence, not more. Break sentences into several, if needed.
 
+    \
     *Don\'t*
 
     > We prove that, in the limit of infinite power, the fairness index
@@ -358,6 +380,7 @@ Now it is time to think of your writing style.
     at the limit also exists in reality (2) the problem reported in
     \[ZGOMO\] is explained by this general result.
 
+    \
     *Do*
 
     > We prove that, in the limit of infinite power, the fairness index
@@ -367,7 +390,9 @@ Now it is time to think of your writing style.
     > and shows that is not a problem of UWB but rather of the
     > performance metric.
 
-2.  Streamline your sentences: remove unnecessary words. Replace
+2.  Streamline your sentences: remove unnecessary words.
+
+    Replace
 
     > When the ZMRP mechanism is employed, nodes send only one message
     > per round. We have that the cost per round is XY/2.
@@ -377,7 +402,9 @@ Now it is time to think of your writing style.
     > With ZMRP, nodes send only one message per round. The cost per
     > round is XY/2.
 
-    Avoid contorted expressions. Replace
+    Avoid contorted expressions.
+
+    Replace
 
     > We can observe that protocol B greatly reduces routing overhead
     > compared to protocol A.
