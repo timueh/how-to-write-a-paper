@@ -415,6 +415,13 @@ Now it is time to think of your writing style.
 
 3.  [Also see Henning\'s Schulzrinne\'s recommendations](http://www.cs.columbia.edu/~hgs/etc/writing-bugs.html), but do not follow his recommendations on inline enumeration and bullets.
 
+**The following style advice was added by [@timueh](https://github.com/timueh)**
+
+4. Once you have written a fair amount of text, put it aside. Leave it untouched at least for a day.
+5. When proof-reading, mumble or, better yet, read out loud. Speaking comes naturally to humans, but writing is a cultural trait. Writing means *to speak through words*. Mumbling turns writing into reading: the brain processing sound waves.
+6. Ask others to proof-read your paper.
+7. Remove unnecessary words not in the first draft, but in the close-to-final one.
+
 # Final pass: Remove
 
 You have written your paper, or at least you believe so. Well, you now
